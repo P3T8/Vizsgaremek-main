@@ -1,0 +1,61 @@
+
+# Dokumentáció: Magántanár Kereső Weboldal
+
+## 1. Bevezetés
+Ez a dokumentáció egy olyan magántanár kereső weboldal felépítését és működését írja le, amely lehetővé teszi a felhasználók számára, hogy könnyen találjanak és kapcsolatba léphessenek a számukra megfelelő magántanárokkal. Az oldal célja, hogy összekösse a tanulni vágyó diákokat a tantárgyakban jártas tanárokkal, és biztosítsa a hatékony kommunikációt közöttük.
+
+## 2. Fő Funkciók
+1. Kezdőlap és ismertető szekció: Rövid bemutatás az oldal céljáról és előnyeiről.
+2. Felhasználói hitelesítés: Regisztráció és bejelentkezés a felhasználók számára (diákok és tanárok).
+3. Tanárkeresés: Tantárgy, elérhetőség, ár és értékelések alapján lehet tanárt keresni.
+4. Kapcsolatfelvétel a tanárral: A diák üzenetet küldhet a kiválasztott tanárnak időpont-egyeztetés céljából.
+5. Felhasználói profilok: Mind a tanárok, mind a diákok személyes profilt hozhatnak létre, ahol kezelhetik adataikat.
+
+## 3. Felhasználói Szerepkörök
+### 3.1. Vendég (Nem regisztrált felhasználó)
+- Megtekintheti a kezdőlapot és az oldalról szóló ismertetőt.
+- Bejelentkezés vagy regisztráció szükséges a további funkciók eléréséhez.
+
+### 3.2. Diák (Regisztrált felhasználó)
+- Kereshet tanárokat tantárgy, ár, elérhetőség, értékelés alapján.
+- Profil oldalt hozhat létre, ahol kezelheti az adatait.
+- Kapcsolatba léphet a tanárral üzenetküldő rendszeren keresztül.
+
+### 3.3. Tanár (Regisztrált felhasználó)
+- Profil oldalt hozhat létre, ahol bemutathatja a szakterületét, díjazását, elérhetőségét.
+- Fogadhatja a diákok üzeneteit, és válaszolhat rájuk.
+- Értékeléseket kaphat a diákoktól.
+
+## 4. Részletes Funkcionalitás
+### 4.1. Kezdőlap
+- Rövid ismertetés az oldal működéséről és a regisztráció szükségességéről.
+
+### 4.2. Regisztráció
+- Regisztrációs adatok: név, e-mail, jelszó, felhasználói típus (diák vagy tanár).
+
+### 4.3. Bejelentkezés
+- Bejelentkezés e-mail és jelszó segítségével.
+- Elfelejtett jelszó opció.
+
+### 4.4. Tanárkereső
+- Szűrési lehetőségek: tantárgy, ár, értékelés, elérhetőség.
+- Eredmények kártyanézetben jelennek meg.
+
+### 4.5. Tanár Profil Oldal
+- Tanár neve, bemutatkozás, óradíj, értékelések és üzenetküldő űrlap.
+
+### 4.6. Üzenetküldő rendszer
+- Lehetővé teszi a diák és a tanár közötti kommunikációt.
+
+## 5. Adatbázis Felépítése
+### 5.1. Felhasználók tábla
+- Név, e-mail, jelszó, felhasználói típus (diák vagy tanár).
+
+### 5.2. Tanárok tábla
+- Tantárgyak, díjszabás, bemutatkozás, elérhetőség.
+
+### 5.3. Üzenetek tábla
+- Üzenetküldés a diák és tanár között.
+
+## 6. Biztonsági Megfontolások
+- Jelszavak titkosítása (bcrypt), SQL injekció elleni védelem, GDPR-megfelelőség.

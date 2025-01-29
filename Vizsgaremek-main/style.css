@@ -1,0 +1,48 @@
+form {
+    max-width: 400px;
+
+    margin: 0 auto;
+    padding: 20px;
+
+    background-color: #f9f9f9;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+div.beviteli label {
+    width: 100px;
+    display: inline-block;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Minden label, amely kötelező input mezőhöz kapcsolódik */
+label[for][for]:has(+ input[required])::before {
+    content: "* ";
+    color: blue;
+    /* Csillag színe */
+    font-weight: bold;
+    /* Csillag kiemelése */
+}
+
+
+input:valid {
+    background-color: #C6EFCE;
+}
+
+input:invalid {
+    background-color: #ffdddd;
+}
